@@ -43,6 +43,6 @@ This project requires the following minimum deliverables:
   * On EC2
   * Publically accessible at http://SOME_EC2_PUBLIC_IP:9090
  
-## App Features
+## Features
 
 
