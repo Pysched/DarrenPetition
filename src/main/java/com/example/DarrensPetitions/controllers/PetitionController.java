@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-
 public class PetitionController {
     static List<String> petitions = new ArrayList<>();
 
@@ -21,18 +20,29 @@ public class PetitionController {
         return "index";
     }
 
-    @RequestMapping(value="/create", method= RequestMethod.GET)
+    @RequestMapping(value="create", method= RequestMethod.GET)
     public String createPetition(Model model) {
         model.addAttribute("title", "Create a Petition");
         return "create";
     }
 
-    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    @RequestMapping(value = "create", method = RequestMethod.POST)
     public String processCreatePetition(
             @RequestParam String petitionTitle) {
         petitions.add(petitionTitle);
+        return "redirect:";
+    }
 
-        return "redirect:/";
+    @RequestMapping(value = "search", method = RequestMethod.GET)
+    public String searchPetition(Model model) {
+        model.addAttribute("title", "Search for a Petition");
+        return "search";
+    }
+
+    @RequestMapping(value = "result", method = RequestMethod.GET)
+    public String searchResultPetition(Model model) {
+        model.addAttribute("title", "Review Petition Result");
+        return "result";
     }
 
 }

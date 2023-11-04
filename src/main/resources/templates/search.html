@@ -3,13 +3,9 @@
 <head th:replace="~{fragments :: head}"></head>
 <body>
 <nav th:replace="~{fragments :: navigation}"></nav>
-    <h2 th:text="${title}"></h2>
+<h2 th:text="${title}"></h2>
 
-    <form method="post">
-        <input type="text" name="petitionTitle" placeholder="Title" required>
 
-        <button type="submit">Create Petition</button>
-    </form>
 
 
 <footer th:replace="~{fragments :: footer}"></footer>
