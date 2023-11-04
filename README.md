@@ -25,10 +25,10 @@ This project requires the following minimum deliverables:
 2. Development
 * Use GitHub as the Version Control System
   * Have at least 1 commit per feature - page in the web application
-  * Store Jenkinsdile in GitHub
+  * Store Jenkinsfile in GitHub
   * Configure GitHub Webhook
  
-3. Continous Deployment
+3. Continuous Deployment
 * Use Jenkins CI/CD pipelines - using Jenkinsfile
 * Running on AWS EC2
 * Automatically run after each commit
@@ -37,11 +37,11 @@ This project requires the following minimum deliverables:
   *  Build
   *  Test
   *  Package and archive as a War file
-    * named (for this project) DarrensPetitions.wr
-  * Depoly(ReDeploy) if the user approves it
+    * named (for this project) DarrensPetitions.war
+  * Deploy(ReDeploy) if the user approves it
   * As a Tomcat container
   * On EC2
-  * Publically accessible at http://SOME_EC2_PUBLIC_IP:9090
+  * Publicly accessible at http://SOME_EC2_PUBLIC_IP:9090
  
 ## Features
 
